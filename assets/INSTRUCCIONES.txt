@@ -1,0 +1,50 @@
+IMÁGENES REQUERIDAS — JYJ Rental Security
+==========================================
+
+Coloca aquí los archivos con exactamente estos nombres:
+
+HERO (carrusel principal)
+  hero-1.jpg        — Imagen principal del carrusel (recomendado:1920×800 px)
+  hero-2.jpg        — Segunda slide del carrusel
+  hero-3.jpg        — Tercera slide del carrusel
+
+LOGO
+  logo.png          — Logo de la empresa (fondo transparente, PNG)
+
+VEHÍCULOS
+  vehiculo-principal.jpg — Foto grande de vehículo (sección "Nosotros") ~800×400 px
+  montero.jpg            — Mitsubishi Montero blindado
+  land-cruiser.jpg       — Toyota Land Cruiser blindado
+  four-runner.jpg        — Toyota Four Runner blindado
+  blazer.jpg             — Chevrolet Blazer blindado
+
+SERVICIOS
+  servicios.jpg     — Imagen para la sección de servicios incluidos
+
+CERTIFICACIONES (logos ISO)
+  iso-9001.png
+  iso-14001.png
+  iso-45001.png
+
+CERTIFICACIONES (PDFs descargables)
+  iso-9001.pdf
+  iso-14001.pdf
+  iso-45001.pdf
+
+CLIENTES (logos de empresas cliente)
+  cliente-1.png  ... cliente-10.png
+
+DOCUMENTOS DESCARGABLES
+  accidentes.pdf
+  mantenimiento.pdf
+
+BLOG (fotos de artículos)
+  blog-1.jpg
+  blog-2.jpg
+  blog-3.jpg
+
+==========================================
+NOTA: Todos los JPG del hero y vehículos
+deben tener buena resolución (min. 800px
+de ancho). Los logos pueden ser PNG con
+fondo transparente.

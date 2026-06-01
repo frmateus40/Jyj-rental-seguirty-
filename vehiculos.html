@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehículos — JYJ Rental Security</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="JYJ Rental Security" class="logo-img" />
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html#inicio">INICIO</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="vehiculos.html" class="nav-active">VEHÍCULOS</a></li>
+          <li><a href="clientes.html">CLIENTES</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO BANNER VEHÍCULOS ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Nuestra Flota</h1>
+      <p>Vehículos blindados de las mejores marcas del mundo</p>
+    </div>
+  </section>
+
+  <!-- ===== FLOTA POR MARCA (pestañas horizontales) ===== -->
+  <section class="fleet-section">
+    <div class="container">
+
+      <!-- Fila de pestañas -->
+      <div class="brand-tabs-row">
+        <button class="brand-tab-btn active" data-brand="toyota">Toyota</button>
+        <button class="brand-tab-btn" data-brand="ford">Ford</button>
+        <button class="brand-tab-btn" data-brand="mitsubishi">Mitsubishi</button>
+      </div>
+
+      <!-- Panel Toyota -->
+      <div class="brand-panel active" id="panel-toyota">
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/toyota-land-cruiser.jpg" alt="Land Cruiser" /></div>
+            <div class="vehicle-info">
+              <h3>Land Cruiser</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: III</li>
+                <li><i class="fas fa-users"></i> Capacidad: 7 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Diésel</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/toyota-four-runner.jpg" alt="4Runner" /></div>
+            <div class="vehicle-info">
+              <h3>4Runner</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: III</li>
+                <li><i class="fas fa-users"></i> Capacidad: 5 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/toyota-fortuner.jpg" alt="Fortuner" /></div>
+            <div class="vehicle-info">
+              <h3>Fortuner</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: II</li>
+                <li><i class="fas fa-users"></i> Capacidad: 7 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Diésel</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/toyota-corolla.jpg" alt="Corolla Hybrid" /></div>
+            <div class="vehicle-info">
+              <h3>Corolla Hybrid</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: II</li>
+                <li><i class="fas fa-users"></i> Capacidad: 5 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Híbrido</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x2</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/toyota-yaris.jpg" alt="Yaris Hybrid" /></div>
+            <div class="vehicle-info">
+              <h3>Yaris Hybrid</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: II</li>
+                <li><i class="fas fa-users"></i> Capacidad: 5 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Híbrido</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x2</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/toyota-segovia.jpg" alt="Segovia" /></div>
+            <div class="vehicle-info">
+              <h3>Segovia</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: III</li>
+                <li><i class="fas fa-users"></i> Capacidad: 5 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel Ford -->
+      <div class="brand-panel" id="panel-ford">
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/ford-expedition.jpg" alt="Expedition" style="object-fit: contain; background: #f5f5f5;" /></div>
+            <div class="vehicle-info">
+              <h3>Expedition</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: III</li>
+                <li><i class="fas fa-users"></i> Capacidad: 8 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/ford-explorer.jpg" alt="Explorer" /></div>
+            <div class="vehicle-info">
+              <h3>Explorer</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: II</li>
+                <li><i class="fas fa-users"></i> Capacidad: 6 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: AWD</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/ford-f150.jpg" alt="F-150" /></div>
+            <div class="vehicle-info">
+              <h3>F-150</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: II</li>
+                <li><i class="fas fa-users"></i> Capacidad: 5 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel Mitsubishi -->
+      <div class="brand-panel" id="panel-mitsubishi">
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/mitsubishi-montero.jpg" alt="Montero" /></div>
+            <div class="vehicle-info">
+              <h3>Montero</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: III</li>
+                <li><i class="fas fa-users"></i> Capacidad: 7 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/mitsubishi-outlander.jpg" alt="Outlander" /></div>
+            <div class="vehicle-info">
+              <h3>Outlander</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: II</li>
+                <li><i class="fas fa-users"></i> Capacidad: 5 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Gasolina</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: AWD</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="vehicle-card">
+            <div class="vehicle-img"><img src="assets/mitsubishi-pajero.jpg" alt="Pajero" /></div>
+            <div class="vehicle-info">
+              <h3>Pajero</h3>
+              <ul class="vehicle-specs">
+                <li><i class="fas fa-shield-alt"></i> Nivel de blindaje: III</li>
+                <li><i class="fas fa-users"></i> Capacidad: 7 pasajeros</li>
+                <li><i class="fas fa-gas-pump"></i> Combustible: Diésel</li>
+                <li><i class="fas fa-cog"></i> Transmisión: Automática</li>
+                <li><i class="fas fa-road"></i> Tracción: 4x4</li>
+              </ul>
+              <a href="index.html#contacto" class="btn btn-outline">Solicitar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h4>Contáctenos</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> 310868809</li>
+            <li><i class="fas fa-map-marker-alt"></i> Avenida Suba 115-28, Centro Empresarial Ilargo Torre B 219</li>
+            <li><i class="fas fa-envelope"></i> info@jyjvehiculosblindados.com</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-social-col">
+          <h4>Redes Sociales</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+            <li><a href="clientes.html">CLIENTES</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="pqrs.html">PQRS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-prioridad">
+          <h4>Nuestra Prioridad</h4>
+          <p>Tu seguridad no es una opción, es nuestra razón de ser. Cada vehículo de nuestra flota está preparado para brindarte protección, confort y total tranquilidad en cada trayecto, sin importar el destino.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="footer-legal">
+          <a href="politica-datos.html">Política de Protección de Datos</a>
+          <span>&copy; 2026 JYJ Rental Security. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP ===== -->
+  <a href="https://wa.me/573124790722" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

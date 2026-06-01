@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PQRS — JYJ Rental Security</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="JYJ Rental Security" class="logo-img" />
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+          <li><a href="clientes.html">CLIENTES</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>PQRS</h1>
+      <p>Peticiones, Quejas, Reclamos y Sugerencias</p>
+    </div>
+  </section>
+
+  <!-- ===== FORMULARIO PQRS ===== -->
+  <section class="pqrs-section">
+    <div class="container">
+      <div class="pqrs-intro">
+        <p>En JYJ Rental Security valoramos tu opinión. Diligencia el siguiente formulario y nuestro equipo te dará respuesta en un plazo máximo de <strong>3 días hábiles</strong>.</p>
+      </div>
+
+      <form class="pqrs-form" novalidate enctype="multipart/form-data">
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="pqrs-nombre">Nombre completo</label>
+            <input type="text" id="pqrs-nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="pqrs-email">Correo electrónico</label>
+            <input type="email" id="pqrs-email" name="email" placeholder="correo@ejemplo.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="pqrs-telefono">Teléfono</label>
+            <input type="tel" id="pqrs-telefono" name="telefono" placeholder="+57 300 000 0000" required />
+          </div>
+
+          <div class="form-group">
+            <label for="pqrs-empresa">Empresa <span class="label-hint">(opcional)</span></label>
+            <input type="text" id="pqrs-empresa" name="empresa" placeholder="Nombre de tu empresa" />
+          </div>
+
+          <div class="form-group">
+            <label for="pqrs-tipo">Tipo de solicitud</label>
+            <select id="pqrs-tipo" name="tipo" required>
+              <option value="">Selecciona una opción</option>
+              <option value="peticion">Petición</option>
+              <option value="queja">Queja</option>
+              <option value="reclamo">Reclamo</option>
+              <option value="sugerencia">Sugerencia</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="pqrs-descripcion">Descripción</label>
+            <textarea id="pqrs-descripcion" name="descripcion" rows="5" placeholder="Describe detalladamente tu solicitud..." required></textarea>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="pqrs-adjunto">Archivo adjunto <span class="label-hint">(opcional — PDF, JPG, PNG, máx. 10MB)</span></label>
+            <div class="file-upload-wrapper">
+              <label for="pqrs-adjunto" class="file-upload-label">
+                <i class="fas fa-paperclip"></i>
+                <span id="file-name-display">Seleccionar archivo</span>
+              </label>
+              <input type="file" id="pqrs-adjunto" name="adjunto" accept=".pdf,.jpg,.jpeg,.png" />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_trap" style="display:none;" tabindex="-1" autocomplete="off" />
+
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">ENVIAR SOLICITUD</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h4>Contáctenos</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> 310868809</li>
+            <li><i class="fas fa-map-marker-alt"></i> Avenida Suba 115-28, Centro Empresarial Ilargo Torre B 219</li>
+            <li><i class="fas fa-envelope"></i> info@jyjvehiculosblindados.com</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-social-col">
+          <h4>Redes Sociales</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+            <li><a href="clientes.html">CLIENTES</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="pqrs.html" class="footer-active">PQRS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-prioridad">
+          <h4>Nuestra Prioridad</h4>
+          <p>Tu seguridad no es una opción, es nuestra razón de ser. Cada vehículo de nuestra flota está preparado para brindarte protección, confort y total tranquilidad en cada trayecto, sin importar el destino.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="footer-legal">
+          <a href="politica-datos.html">Política de Protección de Datos</a>
+          <span>&copy; 2026 JYJ Rental Security. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573124790722" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="scripts.js"></script>
+  <script>
+    const fileInput = document.getElementById('pqrs-adjunto');
+    const fileDisplay = document.getElementById('file-name-display');
+    if (fileInput) {
+      fileInput.addEventListener('change', () => {
+        fileDisplay.textContent = fileInput.files.length
+          ? fileInput.files[0].name
+          : 'Seleccionar archivo';
+      });
+    }
+  </script>
+</body>
+</html>

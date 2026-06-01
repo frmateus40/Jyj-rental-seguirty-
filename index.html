@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JYJ Rental Security</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVEGACIÓN ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="JYJ Rental Security" class="logo-img" />
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+          <li><a href="clientes.html">CLIENTES</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <section class="hero-carousel" id="inicio">
+    <div class="carousel-wrapper">
+
+      <div class="carousel-slide active">
+        <img src="assets/hero-1.jpg" alt="Slide 1" class="carousel-img" />
+      </div>
+
+      <div class="carousel-slide">
+        <img src="assets/hero-2.jpg" alt="Slide 2" class="carousel-img" />
+      </div>
+
+      <div class="carousel-slide">
+        <img src="assets/hero-3.jpg" alt="Slide 3" class="carousel-img" />
+      </div>
+
+      <div class="carousel-slide">
+        <img src="assets/hero-4.jpg" alt="Slide 4" class="carousel-img" />
+      </div>
+
+      <div class="carousel-slide">
+        <img src="assets/hero-5.jpg" alt="Slide 5" class="carousel-img" />
+      </div>
+
+      <div class="carousel-slide">
+        <img src="assets/hero-6.jpg" alt="Slide 6" class="carousel-img" />
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Indicadores -->
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+        <span class="dot" data-index="5"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMULARIO DE CONTACTO (primera aparición) ===== -->
+  <section class="contact-form-section" id="contacto">
+    <div class="container">
+      <h2>Solicita tu Cotización</h2>
+      <p class="section-subtitle">Completa el formulario y un asesor te contactará a la brevedad</p>
+      <form class="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nombre1">Nombre del cliente</label>
+            <input type="text" id="nombre1" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email1">Correo electrónico</label>
+            <input type="email" id="email1" name="email" placeholder="correo@ejemplo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono1">Teléfono</label>
+            <input type="tel" id="telefono1" name="telefono" placeholder="+57 300 000 0000" required />
+          </div>
+          <div class="form-group">
+            <label for="ciudad1">Ciudad</label>
+            <input type="text" id="ciudad1" name="ciudad" placeholder="Tu ciudad" required />
+          </div>
+          <div class="form-group">
+            <label for="nivel1">Nivel de blindaje</label>
+            <select id="nivel1" name="nivel">
+              <option value="">Selecciona un nivel</option>
+              <option value="2">Nivel II</option>
+              <option value="3">Nivel III</option>
+              <option value="4">Nivel IV</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="duracion1">Duración del alquiler</label>
+            <div class="duracion-row">
+              <input type="number" id="dias1" name="dias" placeholder="Nº" min="1" class="input-dias" />
+              <select id="duracion1" name="duracion">
+                <option value="">Selecciona</option>
+                <option value="dias">Días</option>
+                <option value="semanas">Semanas</option>
+                <option value="meses">Meses</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="conocio1">¿Cómo nos conoció?</label>
+            <select id="conocio1" name="conocio">
+              <option value="">Selecciona una opción</option>
+              <option value="google">Google / Internet</option>
+              <option value="referido">Referido o recomendación</option>
+              <option value="redes">Redes sociales (Instagram, Facebook)</option>
+              <option value="publicidad">Publicidad</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_trap" style="display:none;" tabindex="-1" autocomplete="off" />
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN VEHÍCULOS BLINDADOS ===== -->
+  <section class="armored-info">
+    <div class="container">
+      <div class="armored-info-inner">
+        <div class="armored-text">
+          <h2>¿Por qué elegir a<br><span>J&amp;J Rental Security?</span></h2>
+          <p>
+            En J&amp;J Rental Security entendemos que la seguridad no debe comprometer el confort.
+            Por eso ponemos a tu disposición una flota de vehículos blindados de última generación,
+            equipados con los más altos estándares internacionales de protección, sin renunciar a
+            la comodidad y el estilo que mereces.
+          </p>
+          <p>
+            Nuestro equipo de profesionales está disponible las 24 horas para garantizarte una
+            experiencia de traslado segura, confiable y completamente personalizada, donde tú y
+            los tuyos siempre viajarán con total tranquilidad.
+          </p>
+          <a href="vehiculos.html" class="btn btn-secondary">Ver Vehículos</a>
+        </div>
+        <div class="armored-image">
+          <img src="assets/vehiculo-principal.jpg" alt="Vehículo blindado" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CARACTERÍSTICAS DEL BLINDAJE ===== -->
+  <section class="armor-features">
+    <div class="container">
+      <h2 class="section-title">Características del Blindaje</h2>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3>Rendimiento</h3>
+          <p>Mantenimiento óptimo para garantizar el máximo desempeño en cualquier condición.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-gas-pump"></i>
+          </div>
+          <h3>Combustible</h3>
+          <p>Consumo normal comparable a vehículos sin blindaje gracias a nuestra tecnología.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Protección</h3>
+          <p>Cumplimiento de estándares internacionales de seguridad y protección balística.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h4>Contáctenos</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> 310868809</li>
+            <li><i class="fas fa-map-marker-alt"></i> Avenida Suba 115-28, Centro Empresarial Ilargo Torre B 219</li>
+            <li><i class="fas fa-envelope"></i> info@jyjvehiculosblindados.com</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-social-col">
+          <h4>Redes Sociales</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+            <li><a href="clientes.html">CLIENTES</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="pqrs.html">PQRS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-prioridad">
+          <h4>Nuestra Prioridad</h4>
+          <p>Tu seguridad no es una opción, es nuestra razón de ser. Cada vehículo de nuestra flota está preparado para brindarte protección, confort y total tranquilidad en cada trayecto, sin importar el destino.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="footer-legal">
+          <a href="politica-datos.html">Política de Protección de Datos</a>
+          <span>&copy; 2026 JYJ Rental Security. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+  <a href="https://wa.me/573124790722" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
