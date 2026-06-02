@@ -340,7 +340,7 @@ ul { list-style: none; }
   cursor: pointer;
   transition: var(--transition);
 }
-.dot.active { background: var(--color-secondary); }
+.dot.active { background: #e53935; }
 
 /* ============================================================
    FORMULARIO DE CONTACTO
@@ -1031,10 +1031,56 @@ textarea:focus { outline: none; border-color: #e53935; }
   }
 
   /* ---- CARRUSEL ---- */
+  .hero-carousel { overflow: hidden; }
+
+  .carousel-slide {
+    min-height: 240px;
+    position: relative;
+  }
+
   .carousel-img {
-    height: auto;
-    max-height: 260px;
+    height: 56vw;
+    min-height: 220px;
+    max-height: 380px;
     object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-btn {
+    padding: 10px 13px;
+    font-size: 1rem;
+    background: rgba(0,0,0,0.45);
+    border-radius: 50%;
+  }
+  .carousel-btn.prev { left: 10px; }
+  .carousel-btn.next { right: 10px; }
+
+  .carousel-dots {
+    bottom: 10px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.6);
+  }
+
+  .dot.active {
+    background: #e53935;
+    transform: scale(1.3);
+  }
+
+  .carousel-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to top, rgba(0,0,0,0.35), transparent);
+    pointer-events: none;
+    z-index: 5;
   }
 
   /* ---- SECCIONES ---- */
