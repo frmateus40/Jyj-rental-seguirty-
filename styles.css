@@ -1241,8 +1241,8 @@ textarea:focus { outline: none; border-color: #e53935; }
   text-align: center;
 }
 .page-banner--blue { background: #ffffff; }
-.page-banner--blue h1 { color: #111111; }
-.page-banner--blue p { color: #111111; }
+.page-banner--blue h1 { color: #111111 !important; }
+.page-banner--blue p { color: #111111 !important; }
 .page-banner h1 {
   font-size: 2.4rem;
   font-weight: 800;
