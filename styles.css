@@ -1242,7 +1242,7 @@ textarea:focus { outline: none; border-color: #e53935; }
 }
 .page-banner--blue { background: #ffffff; }
 .page-banner--blue h1 { color: #111111; }
-.page-banner--blue p { color: #555555; }
+.page-banner--blue p { color: #111111; }
 .page-banner h1 {
   font-size: 2.4rem;
   font-weight: 800;
