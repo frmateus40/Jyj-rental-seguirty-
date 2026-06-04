@@ -1240,6 +1240,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   padding: 60px 0;
   text-align: center;
 }
+.page-banner--blue { background: #0d3b7a; }
 .page-banner h1 {
   font-size: 2.4rem;
   font-weight: 800;
