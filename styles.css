@@ -492,15 +492,15 @@ ul { list-style: none; }
 
 .vehicle-img {
   width: 100%;
-  height: 190px;
-  padding: 12px 16px;
+  height: 220px;
+  overflow: hidden;
   background: #ffffff;
 }
 .vehicle-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background: #ffffff;
+  object-fit: cover;
+  object-position: center;
 }
 
 .vehicle-actions {
