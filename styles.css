@@ -494,7 +494,8 @@ ul { list-style: none; }
   gap: 14px;
   flex: 1;
 }
-.vehicle-info h3 { font-size: 1.15rem; font-weight: 700; color: var(--color-primary); margin-bottom: 12px; }
+.vehicle-info h3 { font-size: 1.15rem; font-weight: 700; color: var(--color-primary); margin-bottom: 4px; }
+.vehicle-year { font-size: 0.85rem; color: #e53935; font-weight: 600; margin-bottom: 12px; }
 
 .vehicle-specs {
   display: flex;
