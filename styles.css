@@ -837,7 +837,7 @@ ul { list-style: none; }
   gap: 10px;
 }
 
-.footer-contact { display: flex; flex-direction: column; gap: 10px; }
+.footer-contact { display: flex; flex-direction: column; gap: 18px; }
 .footer-contact li {
   display: flex;
   align-items: flex-start;
