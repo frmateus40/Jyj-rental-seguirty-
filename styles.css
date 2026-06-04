@@ -1409,6 +1409,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 24px;
+  justify-content: center;
 }
 
 .brand-tab-btn {
