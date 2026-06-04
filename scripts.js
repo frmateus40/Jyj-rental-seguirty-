@@ -181,6 +181,38 @@ document.querySelectorAll('.brand-tab-btn').forEach(btn => {
 });
 
 /* ============================================================
+   MODAL COTIZACIÓN — vehiculos.html
+   ============================================================ */
+function abrirCotizacion(btn) {
+  const card = btn.closest('.vehicle-card');
+  const nombre = card.querySelector('h3').textContent;
+  const modal = document.getElementById('modalCotizacion');
+  const titulo = document.getElementById('modalVehiculoNombre');
+  if (!modal) return;
+  titulo.textContent = nombre;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+const modalOverlay = document.getElementById('modalCotizacion');
+const modalClose   = document.getElementById('modalClose');
+
+if (modalClose) {
+  modalClose.addEventListener('click', () => {
+    modalOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+}
+if (modalOverlay) {
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+      modalOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+}
+
+/* ============================================================
    MOSTRAR / OCULTAR DETALLES — vehiculos.html
    ============================================================ */
 document.querySelectorAll('.toggle-details-btn').forEach(btn => {
