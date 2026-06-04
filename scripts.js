@@ -181,6 +181,17 @@ document.querySelectorAll('.brand-tab-btn').forEach(btn => {
 });
 
 /* ============================================================
+   MOSTRAR / OCULTAR DETALLES — vehiculos.html
+   ============================================================ */
+document.querySelectorAll('.toggle-details-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const specs = btn.nextElementSibling;
+    const open = specs.classList.toggle('open');
+    btn.textContent = open ? 'Ocultar detalles' : 'Mostrar detalles';
+  });
+});
+
+/* ============================================================
    NAV ACTIVO — resalta en rojo el enlace de la sección visible
    ============================================================ */
 (function () {
