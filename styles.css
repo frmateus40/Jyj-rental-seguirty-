@@ -142,8 +142,8 @@ ul { list-style: none; }
   align-items: center;
 }
 .logo-img {
-  height: 115px;
-  width: 180px;
+  height: 100px;
+  width: auto;
   object-fit: contain;
   display: block;
 }
@@ -1136,7 +1136,7 @@ textarea:focus { outline: none; border-color: #e53935; }
     padding: 0 16px;
   }
 
-  .logo-img { height: 90px; }
+  .logo-img { height: 80px; width: auto; }
 
   /* Muestra hamburguesa */
   .nav-toggle { display: flex; }
