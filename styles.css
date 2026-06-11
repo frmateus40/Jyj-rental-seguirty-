@@ -265,7 +265,7 @@ ul { list-style: none; }
 /* ============================================================
    HERO CAROUSEL
    ============================================================ */
-.hero-carousel { position: relative; width: 100%; margin-top: 2cm; }
+.hero-carousel { position: relative; width: 100%; margin-top: 1cm; }
 
 .carousel-wrapper { position: relative; width: 100%; }
 
@@ -1133,7 +1133,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   }
 
   /* ---- CARRUSEL ---- */
-  .hero-carousel { overflow: hidden; margin-top: 2cm; }
+  .hero-carousel { overflow: hidden; margin-top: 1cm; }
 
   .carousel-slide {
     min-height: 280px;
