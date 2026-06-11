@@ -790,7 +790,7 @@ ul { list-style: none; }
 /* ============================================================
    FOOTER
    ============================================================ */
-.site-footer { background: #2b2b2b; color: #dddddd; }
+.site-footer { background: var(--color-footer-bg); color: var(--color-footer-text); }
 
 .footer-top { padding: 48px 0 36px; }
 
@@ -806,14 +806,14 @@ ul { list-style: none; }
 
 .footer-col-prioridad p {
   font-size: 0.88rem;
-  color: #aaaaaa;
+  color: #444444;
   line-height: 1.8;
 }
 
 .footer-col h4 {
   font-size: 1.05rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #e53935;
   margin-bottom: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -839,10 +839,10 @@ ul { list-style: none; }
   gap: 12px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: #cccccc;
+  color: #222222;
   line-height: 1.5;
 }
-.footer-contact li i { color: #aaaaaa; margin-top: 3px; flex-shrink: 0; }
+.footer-contact li i { color: #000000; margin-top: 3px; flex-shrink: 0; }
 .footer-phone {
   color: #e53935;
   font-weight: 700;
@@ -854,7 +854,7 @@ ul { list-style: none; }
 .footer-nav a {
   font-size: 0.88rem;
   font-weight: 700;
-  color: #cccccc;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: var(--transition);
@@ -875,7 +875,7 @@ ul { list-style: none; }
 }
 
 .footer-bottom {
-  border-top: 1px solid #444444;
+  border-top: 1px solid #dddddd;
   padding: 20px 0;
 }
 .footer-bottom-inner {
@@ -890,12 +890,12 @@ ul { list-style: none; }
 .social-links a {
   width: 42px;
   height: 42px;
-  background: #25d366;
+  background: #eeeeee;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #000000;
   transition: var(--transition);
   font-size: 1rem;
 }
@@ -907,7 +907,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 4px;
   font-size: 0.8rem;
-  color: #888888;
+  color: #666666;
 }
 .footer-legal a { color: #e53935; transition: var(--transition); }
 .footer-legal a:hover { text-decoration: underline; }
