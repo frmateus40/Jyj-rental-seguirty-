@@ -1281,18 +1281,18 @@ textarea:focus { outline: none; border-color: #e53935; }
    PÁGINA VEHÍCULOS
    ============================================================ */
 .page-banner {
-  background: #ffffff;
+  background: #e53935;
   padding: 60px 0;
   text-align: center;
 }
 .page-banner h1 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #111111;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .page-banner p {
-  color: #555555;
+  color: rgba(255,255,255,0.85);
   font-size: 1.05rem;
 }
 
