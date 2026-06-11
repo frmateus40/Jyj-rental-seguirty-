@@ -224,6 +224,22 @@ document.querySelectorAll('.toggle-details-btn').forEach(btn => {
 });
 
 /* ============================================================
+   BOTÓN FLOTANTE WHATSAPP — menú de agentes
+   ============================================================ */
+(function () {
+  const btn  = document.getElementById('whatsappBtn');
+  const menu = document.getElementById('whatsappMenu');
+  if (!btn || !menu) return;
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('open');
+  });
+
+  document.addEventListener('click', () => menu.classList.remove('open'));
+})();
+
+/* ============================================================
    NAV ACTIVO — resalta en rojo el enlace de la sección visible
    ============================================================ */
 (function () {
