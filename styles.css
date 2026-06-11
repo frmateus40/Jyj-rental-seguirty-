@@ -132,7 +132,7 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  height: 100px;
+  height: 125px;
   padding: 0 24px 0 0;
   margin-left: 52px;
 }
@@ -142,7 +142,7 @@ ul { list-style: none; }
   align-items: center;
 }
 .logo-img {
-  height: 90px;
+  height: 115px;
   width: auto;
   object-fit: contain;
   display: block;
