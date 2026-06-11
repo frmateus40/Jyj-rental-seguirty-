@@ -121,8 +121,7 @@ ul { list-style: none; }
    HEADER
    ============================================================ */
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
   background: #ffffff;
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
@@ -265,7 +264,7 @@ ul { list-style: none; }
 /* ============================================================
    HERO CAROUSEL
    ============================================================ */
-.hero-carousel { position: relative; width: 100%; margin-top: 1cm; }
+.hero-carousel { position: relative; width: 100%; margin-top: 0; }
 
 .carousel-wrapper { position: relative; width: 100%; }
 
@@ -1179,7 +1178,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   }
 
   /* ---- CARRUSEL ---- */
-  .hero-carousel { overflow: hidden; margin-top: 1cm; }
+  .hero-carousel { overflow: hidden; margin-top: 0; }
 
   .carousel-slide {
     min-height: 280px;
