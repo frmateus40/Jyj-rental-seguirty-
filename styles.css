@@ -1288,11 +1288,11 @@ textarea:focus { outline: none; border-color: #e53935; }
 .page-banner h1 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .page-banner p {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.05rem;
 }
 
