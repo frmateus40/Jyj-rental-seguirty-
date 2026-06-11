@@ -416,21 +416,29 @@ ul { list-style: none; }
    ============================================================ */
 .armored-info { padding: var(--section-padding); background: var(--color-white); }
 
-.armored-vehicle-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-  margin-top: 32px;
+.armored-text-only {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.armored-image img {
-  border-radius: var(--radius);
-  width: 100%;
-  max-width: 720px;
-  height: 400px;
-  object-fit: cover;
+.armored-text-only h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  line-height: 1.3;
 }
+
+.armored-text-only h2 span { color: #e53935; }
+
+.armored-text-only p {
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.armored-text-only .btn { margin-top: 8px; }
 
 /* ============================================================
    GALERÍA DE VEHÍCULOS
