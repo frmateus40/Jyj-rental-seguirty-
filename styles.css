@@ -1131,12 +1131,12 @@ textarea:focus { outline: none; border-color: #e53935; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 86px;
+    height: 100px;
     margin-left: 0;
     padding: 0 16px;
   }
 
-  .logo-img { height: 74px; }
+  .logo-img { height: 90px; }
 
   /* Muestra hamburguesa */
   .nav-toggle { display: flex; }
@@ -1145,7 +1145,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   .main-nav {
     display: none;
     position: absolute;
-    top: 86px;
+    top: 100px;
     left: 0;
     right: 0;
     background: #000000;
