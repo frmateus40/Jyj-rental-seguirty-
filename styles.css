@@ -264,7 +264,7 @@ ul { list-style: none; }
 /* ============================================================
    HERO CAROUSEL
    ============================================================ */
-.hero-carousel { position: relative; width: 100%; margin-top: -3cm; }
+.hero-carousel { position: relative; width: 100%; margin-top: -2cm; }
 
 .carousel-wrapper { position: relative; width: 100%; }
 
