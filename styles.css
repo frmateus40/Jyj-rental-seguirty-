@@ -163,8 +163,8 @@ ul { list-style: none; }
   border-radius: var(--radius);
   color: #000000;
   font-size: 1.3rem;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
   transition: var(--transition);
   flex-shrink: 0;
@@ -264,7 +264,7 @@ ul { list-style: none; }
 /* ============================================================
    HERO CAROUSEL
    ============================================================ */
-.hero-carousel { position: relative; width: 100%; margin-top: 0; }
+.hero-carousel { position: relative; width: 100%; margin-top: -2cm; }
 
 .carousel-wrapper { position: relative; width: 100%; }
 
