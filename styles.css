@@ -489,6 +489,8 @@ ul { list-style: none; }
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
 }
 .vehicle-img img {
   width: 100%;
