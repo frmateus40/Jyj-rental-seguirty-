@@ -1488,3 +1488,52 @@ textarea:focus { outline: none; border-color: #e53935; }
   padding: 40px 0;
 }
 .brand-panel.active { display: block; }
+
+/* ============================================================
+   SECCIÓN NUESTRAS MARCAS — index.html
+   ============================================================ */
+.brands-section {
+  padding: 70px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+.brands-section .section-title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+.brands-section .section-subtitle {
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  color: #555;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.brand-card {
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 22px 36px;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.brand-card:hover {
+  border-color: #cc0000;
+  color: #cc0000;
+  box-shadow: 0 4px 16px rgba(204,0,0,0.12);
+}
+@media (max-width: 768px) {
+  .brands-section { padding: 48px 0; }
+  .brand-card { padding: 16px 24px; }
+}
