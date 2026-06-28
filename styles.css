@@ -1555,7 +1555,7 @@ textarea:focus { outline: none; border-color: #e53935; }
 /* Tarjeta individual */
 .brand-card {
   background: #ffffff;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #1a1a2e;
   border-radius: 12px;
   padding: 26px 44px;
   font-size: clamp(1rem, 1.6vw, 1.2rem);
@@ -1564,7 +1564,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   letter-spacing: 1.5px;
   text-transform: uppercase;
   white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
   transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
   flex-shrink: 0;
@@ -1572,7 +1572,7 @@ textarea:focus { outline: none; border-color: #e53935; }
 .brand-card:hover {
   border-color: #cc0000;
   color: #cc0000;
-  box-shadow: 0 6px 20px rgba(204,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(204,0,0,0.20);
 }
 
 @media (max-width: 768px) {
