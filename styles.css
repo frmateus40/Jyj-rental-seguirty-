@@ -1490,12 +1490,13 @@ textarea:focus { outline: none; border-color: #e53935; }
 .brand-panel.active { display: block; }
 
 /* ============================================================
-   SECCIÓN NUESTRAS MARCAS — index.html
+   SECCIÓN NUESTRAS MARCAS — carrusel infinito
    ============================================================ */
 .brands-section {
-  padding: 70px 0;
+  padding: 70px 0 60px;
   background: #f9f9f9;
   text-align: center;
+  overflow: hidden;
 }
 .brands-section .section-title {
   font-size: clamp(1.5rem, 3vw, 2.2rem);
@@ -1509,31 +1510,73 @@ textarea:focus { outline: none; border-color: #e53935; }
   margin: 0 auto 48px;
   line-height: 1.6;
 }
-.brands-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+
+/* Contenedor con máscara de desvanecimiento en los bordes */
+.brands-carousel-track-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
+.brands-carousel-track-wrapper::before,
+.brands-carousel-track-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.brands-carousel-track-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #f9f9f9, transparent);
+}
+.brands-carousel-track-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #f9f9f9, transparent);
+}
+
+/* Pista animada */
+.brands-carousel-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: brandScroll 22s linear infinite;
+}
+.brands-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes brandScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Tarjeta individual */
 .brand-card {
   background: #ffffff;
   border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 22px 36px;
-  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  border-radius: 12px;
+  padding: 26px 44px;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
   font-weight: 700;
   color: #1a1a2e;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
+  flex-shrink: 0;
 }
 .brand-card:hover {
   border-color: #cc0000;
   color: #cc0000;
-  box-shadow: 0 4px 16px rgba(204,0,0,0.12);
+  box-shadow: 0 6px 20px rgba(204,0,0,0.15);
 }
+
 @media (max-width: 768px) {
-  .brands-section { padding: 48px 0; }
-  .brand-card { padding: 16px 24px; }
+  .brands-section { padding: 48px 0 40px; }
+  .brand-card { padding: 18px 28px; }
+  .brands-carousel-track { animation-duration: 16s; }
 }
