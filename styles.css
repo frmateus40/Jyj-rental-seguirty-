@@ -563,6 +563,14 @@ ul { list-style: none; }
   background: var(--color-primary);
 }
 .armor-features .section-title { color: var(--color-white); }
+.armor-subtitle {
+  color: rgba(255,255,255,0.75);
+  font-size: clamp(0.88rem, 1.4vw, 1rem);
+  max-width: 620px;
+  margin: 10px auto 40px;
+  line-height: 1.6;
+  text-align: center;
+}
 
 .features-grid {
   display: grid;
