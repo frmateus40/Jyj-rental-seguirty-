@@ -1588,3 +1588,89 @@ textarea:focus { outline: none; border-color: #e53935; }
   .brand-card { padding: 18px 28px; }
   .brands-carousel-track { animation-duration: 16s; }
 }
+
+/* ============================================================
+   SECCIÓN CARACTERÍSTICAS DEL SERVICIO
+   ============================================================ */
+.service-features-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+.service-features-section .section-title {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 48px;
+}
+.service-features-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Foto */
+.service-photo-box {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  min-height: 380px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.service-photo-box.service-photo-empty::after {
+  content: '\f03e';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 4rem;
+  color: #cccccc;
+}
+
+/* Lista */
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.service-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.97rem;
+  color: #333333;
+  line-height: 1.5;
+}
+.service-list li i {
+  color: #cc0000;
+  font-size: 1.1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.service-list-legal {
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85rem !important;
+  color: #666666 !important;
+  font-style: italic;
+}
+.service-list-legal i {
+  color: #888888 !important;
+}
+
+@media (max-width: 900px) {
+  .service-features-inner {
+    grid-template-columns: 1fr;
+  }
+  .service-photo-box { min-height: 260px; }
+}
