@@ -22,11 +22,11 @@
       </button>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="servicios.html">SERVICIOS</a></li>
-          <li><a href="vehiculos.html">VEHÍCULOS</a></li>
-          <li><a href="clientes.html">CLIENTES</a></li>
+          <li><a href="index.html#inicio">INICIO</a></li>
           <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="clientes.html">CLIENTES</a></li>
         </ul>
       </nav>
     </div>
@@ -152,9 +152,20 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/573124790722" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+  <div class="whatsapp-wrapper">
+    <div class="whatsapp-menu" id="whatsappMenu">
+      <a href="https://wa.me/573124790722" class="whatsapp-agent" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> Agente 1
+      </a>
+      <a href="https://wa.me/573100000000" class="whatsapp-agent" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> Agente 2
+      </a>
+    </div>
+    <button class="whatsapp-btn" id="whatsappBtn" aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+  </div>
 
   <script src="scripts.js"></script>
   <script>
