@@ -12,8 +12,8 @@
   --color-text:       #333333;
   --color-text-light: #666666;
   --color-white:      #ffffff;
-  --color-footer-bg:  #ffffff;
-  --color-footer-text:#222222;
+  --color-footer-bg:  #000000;
+  --color-footer-text:#cccccc;
 
   /* Tipografía */
   --font-main:   'Segoe UI', Arial, sans-serif;
@@ -844,10 +844,10 @@ ul { list-style: none; }
   gap: 12px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: #222222;
+  color: #cccccc;
   line-height: 1.5;
 }
-.footer-contact li i { color: #000000; margin-top: 3px; flex-shrink: 0; }
+.footer-contact li i { color: #aaaaaa; margin-top: 3px; flex-shrink: 0; }
 .footer-phone {
   color: #e53935;
   font-weight: 700;
@@ -859,7 +859,7 @@ ul { list-style: none; }
 .footer-nav a {
   font-size: 0.88rem;
   font-weight: 700;
-  color: #000000;
+  color: #cccccc;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: var(--transition);
@@ -880,7 +880,7 @@ ul { list-style: none; }
 }
 
 .footer-bottom {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #333333;
   padding: 20px 0;
 }
 .footer-bottom-inner {
@@ -895,12 +895,12 @@ ul { list-style: none; }
 .social-links a {
   width: 42px;
   height: 42px;
-  background: #eeeeee;
+  background: #222222;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: #cccccc;
   transition: var(--transition);
   font-size: 1rem;
 }
@@ -912,7 +912,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 4px;
   font-size: 0.8rem;
-  color: #666666;
+  color: #888888;
 }
 .footer-legal a { color: #e53935; transition: var(--transition); }
 .footer-legal a:hover { text-decoration: underline; }
