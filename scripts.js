@@ -1,3 +1,11 @@
+/* fuerza CSS fresco sin importar caché del navegador */
+(function(){
+  var s=document.createElement('link');
+  s.rel='stylesheet';
+  s.href='site.css?t='+Date.now();
+  document.head.appendChild(s);
+})();
+
 /* ============================================================
    NAVEGACIÓN MOBILE
    ============================================================ */
