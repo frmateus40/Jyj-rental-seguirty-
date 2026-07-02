@@ -6,6 +6,23 @@
   document.head.appendChild(s);
 })();
 
+/* actualiza imágenes del carrusel aunque el HTML esté en caché */
+(function(){
+  var imgs = {
+    'hero-2.jpg':'hero-2b.jpg','hero-3.jpg':'hero-3b.jpg',
+    'hero-4.jpg':'hero-4b.jpg','hero-5.jpg':'hero-5b.jpg',
+    'hero-6.jpg':'hero-6b.jpg','hero-7.jpg':'hero-7b.jpg',
+    'hero-9.jpg':'hero-9b.jpg'
+  };
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.carousel-img').forEach(function(img){
+      Object.keys(imgs).forEach(function(old){
+        if(img.src.indexOf(old)!==-1) img.src=img.src.replace(old,imgs[old]);
+      });
+    });
+  });
+})();
+
 /* ============================================================
    NAVEGACIÓN MOBILE
    ============================================================ */
