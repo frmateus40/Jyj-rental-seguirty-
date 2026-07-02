@@ -1145,10 +1145,10 @@ textarea:focus { outline: none; border-color: #e53935; }
     align-items: flex-start;
     height: auto;
     margin-left: 0;
-    padding: 1cm 16px 0.5cm;
+    padding: 0 16px 0.5cm;
   }
 
-  .logo-img { height: clamp(80px, 20vw, 120px); width: auto; }
+  .logo-img { height: clamp(42px, 14vw, 82px); width: auto; }
 
   /* Muestra hamburguesa */
   .nav-toggle { display: flex; }
@@ -1157,7 +1157,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   .main-nav {
     display: none;
     position: absolute;
-    top: clamp(90px, 22vw, 130px);
+    top: clamp(52px, 14vw, 90px);
     left: 0;
     right: 0;
     background: #ffffff;
