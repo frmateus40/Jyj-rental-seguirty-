@@ -125,15 +125,17 @@ ul { list-style: none; }
   z-index: 1000;
   background: #ffffff;
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  padding-top: 1cm;
 }
 
 .header-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: flex-start;
-  height: auto;
-  padding: 1cm 24px 0.4cm 0;
+  align-items: center;
+  height: clamp(100px, 13vw, 190px);
+  padding: 0 24px 0 0;
   margin-left: 52px;
+  margin-top: 0;
 }
 
 .logo a {
@@ -1141,10 +1143,10 @@ textarea:focus { outline: none; border-color: #e53935; }
   .header-inner {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    height: auto;
+    align-items: center;
+    height: clamp(90px, 22vw, 130px);
     margin-left: 0;
-    padding: 1cm 16px 0.4cm;
+    padding: 0 16px;
   }
 
   .logo-img { height: clamp(80px, 20vw, 120px); width: auto; }
