@@ -1150,8 +1150,13 @@ textarea:focus { outline: none; border-color: #e53935; }
 
   .logo-img { height: clamp(42px, 14vw, 82px); width: auto; }
 
-  /* Muestra hamburguesa */
-  .nav-toggle { display: flex; }
+  /* Muestra hamburguesa — mismo tamaño que el logo */
+  .nav-toggle {
+    display: flex;
+    width: clamp(42px, 14vw, 82px);
+    height: clamp(42px, 14vw, 82px);
+    font-size: clamp(1.4rem, 5vw, 2.4rem);
+  }
 
   /* Menú oculto por defecto */
   .main-nav {
