@@ -132,7 +132,7 @@ ul { list-style: none; }
   grid-template-columns: auto 1fr auto;
   align-items: flex-start;
   height: auto;
-  padding: 1cm 24px 0.5cm 0;
+  padding: 0 24px 0.5cm 0;
   margin-left: 52px;
 }
 
