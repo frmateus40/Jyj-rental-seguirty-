@@ -130,19 +130,19 @@ ul { list-style: none; }
 .header-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: flex-start;
+  align-items: center;
   height: auto;
-  padding: 0 24px 0.5cm 0;
+  padding: 8px 24px 8px 0;
   margin-left: 52px;
 }
 
 .logo a {
   display: flex;
-  align-items: flex-start;
-  padding-top: 6px;
+  align-items: center;
+  padding-top: 0;
 }
 .logo-img {
-  height: clamp(28px, 3.5vw, 40px);
+  height: clamp(28px, 2.5vw, 34px);
   width: auto;
   object-fit: contain;
   display: block;
@@ -265,7 +265,7 @@ ul { list-style: none; }
 /* ============================================================
    HERO CAROUSEL
    ============================================================ */
-.hero-carousel { position: relative; width: 100%; margin-top: -3.5cm; }
+.hero-carousel { position: relative; width: 100%; margin-top: 0; }
 
 .carousel-wrapper { position: relative; width: 100%; }
 
