@@ -141,7 +141,7 @@ ul { list-style: none; }
   align-items: flex-start;
 }
 .logo-img {
-  height: clamp(52px, 9vw, 137px);
+  height: clamp(28px, 3.5vw, 40px);
   width: auto;
   object-fit: contain;
   display: block;
