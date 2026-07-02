@@ -1148,14 +1148,14 @@ textarea:focus { outline: none; border-color: #e53935; }
     padding: 0 16px 0.5cm;
   }
 
-  .logo-img { height: clamp(42px, 14vw, 82px); width: auto; }
+  .logo-img { height: clamp(26px, 8vw, 46px); width: auto; }
 
   /* Muestra hamburguesa — mismo tamaño que el logo */
   .nav-toggle {
     display: flex;
-    width: clamp(42px, 14vw, 82px);
-    height: clamp(42px, 14vw, 82px);
-    font-size: clamp(1.4rem, 5vw, 2.4rem);
+    width: clamp(26px, 8vw, 46px);
+    height: clamp(26px, 8vw, 46px);
+    font-size: clamp(0.9rem, 3vw, 1.4rem);
   }
 
   /* Menú oculto por defecto */
