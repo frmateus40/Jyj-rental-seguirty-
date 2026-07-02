@@ -138,10 +138,10 @@ ul { list-style: none; }
 
 .logo a {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .logo-img {
-  height: clamp(90px, 12vw, 175px);
+  height: clamp(52px, 9vw, 137px);
   width: auto;
   object-fit: contain;
   display: block;
