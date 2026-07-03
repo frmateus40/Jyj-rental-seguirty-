@@ -57,6 +57,34 @@ function _applyDOMChanges(){
   document.querySelectorAll('img[src*="prado.webp"]').forEach(function(img){
     img.src = img.src.replace('prado.webp','prado1.webp');
   });
+
+  /* 7. centra botón SOLICITAR AHORA vía estilo inline (ignora caché CSS) */
+  document.querySelectorAll('.vehicle-actions').forEach(function(el){
+    el.style.alignItems = 'center';
+  });
+
+  /* 8. lightbox – clic en foto del vehículo muestra imagen grande */
+  var lb = document.createElement('div');
+  lb.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;';
+  var lbClose = document.createElement('button');
+  lbClose.innerHTML = '&times;';
+  lbClose.style.cssText = 'position:absolute;top:16px;right:24px;background:none;border:none;color:#fff;font-size:3rem;cursor:pointer;line-height:1;padding:0;';
+  var lbImg = document.createElement('img');
+  lbImg.style.cssText = 'max-width:90vw;max-height:88vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.5);cursor:default;';
+  lb.appendChild(lbClose);
+  lb.appendChild(lbImg);
+  document.body.appendChild(lb);
+
+  function lbOpen(src,alt){ lbImg.src=src; lbImg.alt=alt||''; lb.style.display='flex'; document.body.style.overflow='hidden'; }
+  function lbClose2(){ lb.style.display='none'; document.body.style.overflow=''; lbImg.src=''; }
+
+  document.querySelectorAll('.vehicle-img img').forEach(function(img){
+    img.style.cursor='zoom-in';
+    img.addEventListener('click', function(){ lbOpen(this.src, this.alt); });
+  });
+  lbClose.addEventListener('click', lbClose2);
+  lb.addEventListener('click', function(e){ if(e.target===lb) lbClose2(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') lbClose2(); });
 }
 /* corre inmediatamente si el DOM ya cargó, si no espera el evento */
 if(document.readyState==='loading'){
