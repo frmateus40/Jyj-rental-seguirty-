@@ -7,8 +7,7 @@
 })();
 
 /* aplica todos los cambios al DOM aunque el HTML esté en caché */
-document.addEventListener('DOMContentLoaded', function(){
-
+function _applyDOMChanges(){
   /* 1. actualiza imágenes del carrusel */
   var imgs = {
     'hero-2.jpg':'hero-2b.jpg','hero-3.jpg':'hero-3b.jpg',
@@ -53,8 +52,13 @@ document.addEventListener('DOMContentLoaded', function(){
   /* 5. quita sección Características del Servicio */
   var svc = document.querySelector('.service-features-section');
   if(svc) svc.remove();
-
-});
+}
+/* corre inmediatamente si el DOM ya cargó, si no espera el evento */
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',_applyDOMChanges);
+} else {
+  _applyDOMChanges();
+}
 
 /* ============================================================
    NAVEGACIÓN MOBILE
