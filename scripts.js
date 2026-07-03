@@ -58,6 +58,12 @@ function _applyDOMChanges(){
     img.src = img.src.replace('prado.webp','prado1.webp');
   });
 
+  /* 7b. actualiza imagen 4Runner (toyota-four-runner.webp → runner1.webp) */
+  document.querySelectorAll('img[src*="four-runner"]').forEach(function(img){
+    img.src = img.src.replace('toyota-four-runner.webp','runner1.webp');
+    img.style.objectFit = 'contain';
+  });
+
   /* 7. centra botón SOLICITAR AHORA vía estilo inline (ignora caché CSS) */
   document.querySelectorAll('.vehicle-actions').forEach(function(el){
     el.style.alignItems = 'center';
