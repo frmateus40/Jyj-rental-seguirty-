@@ -52,6 +52,11 @@ function _applyDOMChanges(){
   /* 5. quita sección Características del Servicio */
   var svc = document.querySelector('.service-features-section');
   if(svc) svc.remove();
+
+  /* 6. actualiza imagen Land Cruiser (prado.webp → prado1.webp) */
+  document.querySelectorAll('img[src*="prado.webp"]').forEach(function(img){
+    img.src = img.src.replace('prado.webp','prado1.webp');
+  });
 }
 /* corre inmediatamente si el DOM ya cargó, si no espera el evento */
 if(document.readyState==='loading'){
