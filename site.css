@@ -511,7 +511,7 @@ ul { list-style: none; }
 .btn-solicitar-ahora {
   display: inline-block;
   width: auto;
-  align-self: flex-start;
+  align-self: center;
   background: #e53935;
   color: #ffffff;
   text-align: center;
