@@ -70,6 +70,12 @@ function _applyDOMChanges(){
     img.style.objectFit = 'contain';
   });
 
+  /* 7d. actualiza imagen Corolla (toyota-corolla.webp → corolla1.webp) */
+  document.querySelectorAll('img[src*="toyota-corolla"]').forEach(function(img){
+    img.src = img.src.replace('toyota-corolla.webp','corolla1.webp');
+    img.style.objectFit = 'contain';
+  });
+
   /* 7. centra botón SOLICITAR AHORA y quita margen negativo vía estilo inline */
   document.querySelectorAll('.vehicle-actions').forEach(function(el){
     el.style.alignItems = 'center';
