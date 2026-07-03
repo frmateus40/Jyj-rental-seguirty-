@@ -850,11 +850,11 @@ ul { list-style: none; }
 }
 .footer-contact li i { color: #000000; margin-top: 3px; flex-shrink: 0; }
 .footer-phone {
-  color: #e53935;
+  color: #000000;
   font-weight: 700;
   font-size: 1rem;
 }
-.footer-phone:hover { color: #ff6b6b; }
+.footer-phone:hover { color: #e53935; }
 
 .footer-nav { display: flex; flex-direction: column; gap: 10px; }
 .footer-nav a {
