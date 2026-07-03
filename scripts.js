@@ -6,28 +6,55 @@
   document.head.appendChild(s);
 })();
 
-/* actualiza imágenes del carrusel aunque el HTML esté en caché */
-(function(){
+/* aplica todos los cambios al DOM aunque el HTML esté en caché */
+document.addEventListener('DOMContentLoaded', function(){
+
+  /* 1. actualiza imágenes del carrusel */
   var imgs = {
     'hero-2.jpg':'hero-2b.jpg','hero-3.jpg':'hero-3b.jpg',
     'hero-4.jpg':'hero-4b.jpg','hero-5.jpg':'hero-5b.jpg',
     'hero-6.jpg':'hero-6b.jpg','hero-7.jpg':'hero-7b.jpg',
-    'hero-9.jpg':'hero-9b.jpg',
-    'hero-12.jpg':'hero-12b.jpg',
-    'hero-8.jpg':'hero-8d.jpg',
-    'hero-8b.jpg':'hero-8d.jpg',
-    'hero-8c.jpg':'hero-8d.jpg'
+    'hero-9.jpg':'hero-9b.jpg','hero-12.jpg':'hero-12b.jpg',
+    'hero-8.jpg':'hero-8d.jpg','hero-8b.jpg':'hero-8d.jpg','hero-8c.jpg':'hero-8d.jpg'
   };
-  var ts = Date.now();
-  document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('.carousel-img').forEach(function(img){
-      Object.keys(imgs).forEach(function(old){
-        if(img.src.indexOf(old)!==-1) img.src=img.src.replace(old,imgs[old]);
-      });
-      if(img.src.indexOf('hero-8d')!==-1) img.src='assets/hero-8d.jpg?t='+ts;
+  document.querySelectorAll('.carousel-img').forEach(function(img){
+    Object.keys(imgs).forEach(function(old){
+      if(img.src.indexOf(old)!==-1) img.src=img.src.replace(old,imgs[old]);
     });
   });
-})();
+
+  /* 2. quita slides de hero-7, hero-8, hero-10, hero-11 */
+  var quitar = ['hero-7','hero-8','hero-10','hero-11'];
+  document.querySelectorAll('.carousel-slide').forEach(function(slide){
+    var img = slide.querySelector('.carousel-img');
+    if(img && quitar.some(function(h){ return img.src.indexOf(h)!==-1; })){
+      slide.remove();
+    }
+  });
+
+  /* 3. reconstruye puntos según slides restantes */
+  var slides = document.querySelectorAll('.carousel-slide');
+  var dotsBox = document.querySelector('.carousel-dots');
+  if(dotsBox){
+    dotsBox.innerHTML='';
+    slides.forEach(function(_,i){
+      var d=document.createElement('span');
+      d.className='dot'+(i===0?' active':'');
+      d.setAttribute('data-index',i);
+      dotsBox.appendChild(d);
+    });
+  }
+
+  /* 4. quita botón Ver Vehículos */
+  document.querySelectorAll('a.btn-secondary').forEach(function(a){
+    if(a.textContent.trim()==='Ver Vehículos') a.remove();
+  });
+
+  /* 5. quita sección Características del Servicio */
+  var svc = document.querySelector('.service-features-section');
+  if(svc) svc.remove();
+
+});
 
 /* ============================================================
    NAVEGACIÓN MOBILE
