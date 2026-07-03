@@ -64,6 +64,12 @@ function _applyDOMChanges(){
     img.style.objectFit = 'contain';
   });
 
+  /* 7c. actualiza imagen Fortuner (toyota-fortuner.webp → fortuner1.webp) */
+  document.querySelectorAll('img[src*="toyota-fortuner"]').forEach(function(img){
+    img.src = img.src.replace('toyota-fortuner.webp','fortuner1.webp');
+    img.style.objectFit = 'contain';
+  });
+
   /* 7. centra botón SOLICITAR AHORA vía estilo inline (ignora caché CSS) */
   document.querySelectorAll('.vehicle-actions').forEach(function(el){
     el.style.alignItems = 'center';
