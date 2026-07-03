@@ -12,7 +12,8 @@
     'hero-2.jpg':'hero-2b.jpg','hero-3.jpg':'hero-3b.jpg',
     'hero-4.jpg':'hero-4b.jpg','hero-5.jpg':'hero-5b.jpg',
     'hero-6.jpg':'hero-6b.jpg','hero-7.jpg':'hero-7b.jpg',
-    'hero-9.jpg':'hero-9b.jpg'
+    'hero-9.jpg':'hero-9b.jpg',
+    'hero-12.jpg':'hero-12b.jpg'
   };
   document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.carousel-img').forEach(function(img){
