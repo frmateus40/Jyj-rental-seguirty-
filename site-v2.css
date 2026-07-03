@@ -505,13 +505,13 @@ ul { list-style: none; }
   margin-top: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
 .btn-solicitar-ahora {
   display: inline-block;
   width: auto;
-  align-self: center;
   background: #e53935;
   color: #ffffff;
   text-align: center;
