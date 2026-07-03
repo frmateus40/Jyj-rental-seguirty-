@@ -76,9 +76,9 @@ function _applyDOMChanges(){
     img.style.objectFit = 'contain';
   });
 
-  /* 7e. actualiza imagen Yaris (toyota-yaris.webp → yaris1.webp) */
-  document.querySelectorAll('img[src*="toyota-yaris"]').forEach(function(img){
-    img.src = img.src.replace('toyota-yaris.webp','yaris1.webp');
+  /* 7e. actualiza imagen Yaris → yaris2.webp */
+  document.querySelectorAll('img[src*="toyota-yaris"], img[src*="yaris1.webp"]').forEach(function(img){
+    img.src = img.src.replace('toyota-yaris.webp','yaris2.webp').replace('yaris1.webp','yaris2.webp');
     img.style.objectFit = 'contain';
     img.style.transform = '';
   });
