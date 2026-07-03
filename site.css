@@ -561,11 +561,11 @@ ul { list-style: none; }
    ============================================================ */
 .armor-features {
   padding: var(--section-padding);
-  background: var(--color-primary);
+  background: #e8e8e8;
 }
-.armor-features .section-title { color: var(--color-white); }
+.armor-features .section-title { color: var(--color-primary); }
 .armor-subtitle {
-  color: rgba(255,255,255,0.75);
+  color: #555555;
   font-size: clamp(0.88rem, 1.4vw, 1rem);
   max-width: 620px;
   margin: 10px auto 40px;
