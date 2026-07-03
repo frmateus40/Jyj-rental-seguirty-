@@ -523,6 +523,12 @@ ul { list-style: none; }
   transition: var(--transition);
 }
 .btn-solicitar-ahora:hover { background: #c62828; }
+@media (min-width: 769px) {
+  .btn-solicitar-ahora {
+    padding: 11px 28px;
+    font-size: 0.92rem;
+  }
+}
 
 .toggle-details-btn {
   background: none;
