@@ -76,6 +76,19 @@ function _applyDOMChanges(){
     img.style.objectFit = 'contain';
   });
 
+  /* 7e. actualiza imagen Yaris (toyota-yaris.webp → yaris1.webp) */
+  document.querySelectorAll('img[src*="toyota-yaris"]').forEach(function(img){
+    img.src = img.src.replace('toyota-yaris.webp','yaris1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
+  /* 7f. actualiza imagen Segovia (toyota-segovia.webp → segovia1.webp) */
+  document.querySelectorAll('img[src*="toyota-segovia"]').forEach(function(img){
+    img.src = img.src.replace('toyota-segovia.webp','segovia1.webp');
+    img.style.objectFit = 'contain';
+  });
+
   /* 7. centra botón SOLICITAR AHORA y quita margen negativo vía estilo inline */
   document.querySelectorAll('.vehicle-actions').forEach(function(el){
     el.style.alignItems = 'center';
