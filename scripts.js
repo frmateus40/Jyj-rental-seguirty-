@@ -14,17 +14,17 @@
     'hero-6.jpg':'hero-6b.jpg','hero-7.jpg':'hero-7b.jpg',
     'hero-9.jpg':'hero-9b.jpg',
     'hero-12.jpg':'hero-12b.jpg',
-    'hero-8.jpg':'hero-8c.jpg',
-    'hero-8b.jpg':'hero-8c.jpg'
+    'hero-8.jpg':'hero-8d.jpg',
+    'hero-8b.jpg':'hero-8d.jpg',
+    'hero-8c.jpg':'hero-8d.jpg'
   };
-  /* fuerza hero-8c siempre fresco con timestamp */
   var ts = Date.now();
   document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.carousel-img').forEach(function(img){
       Object.keys(imgs).forEach(function(old){
         if(img.src.indexOf(old)!==-1) img.src=img.src.replace(old,imgs[old]);
       });
-      if(img.src.indexOf('hero-8c')!==-1) img.src='assets/hero-8c.jpg?t='+ts;
+      if(img.src.indexOf('hero-8d')!==-1) img.src='assets/hero-8d.jpg?t='+ts;
     });
   });
 })();
