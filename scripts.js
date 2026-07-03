@@ -70,9 +70,10 @@ function _applyDOMChanges(){
     img.style.objectFit = 'contain';
   });
 
-  /* 7. centra botón SOLICITAR AHORA vía estilo inline (ignora caché CSS) */
+  /* 7. centra botón SOLICITAR AHORA y quita margen negativo vía estilo inline */
   document.querySelectorAll('.vehicle-actions').forEach(function(el){
     el.style.alignItems = 'center';
+    el.style.marginTop  = '0';
   });
 
   /* 8. lightbox – clic en foto del vehículo muestra imagen grande */
