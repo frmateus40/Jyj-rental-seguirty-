@@ -90,6 +90,13 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* BYD Tang → tang1.webp */
+  document.querySelectorAll('img[src*="byd-tang"]').forEach(function(img){
+    img.src = img.src.replace('byd-tang.webp','tang1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
   /* BYD Han → BYD YUAN Híbrida */
   document.querySelectorAll('.vehicle-card').forEach(function(card){
     var h = card.querySelector('h3');
