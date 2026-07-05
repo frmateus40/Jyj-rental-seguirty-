@@ -90,6 +90,16 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* Suburban → Blazer RS + blazer1.webp */
+  document.querySelectorAll('.vehicle-card').forEach(function(card){
+    var h = card.querySelector('h3');
+    if(h && h.textContent.trim()==='Suburban'){
+      h.textContent = 'Blazer RS';
+      var img = card.querySelector('.vehicle-img img');
+      if(img){ img.src = img.src.replace('chevrolet-suburban.jpg','blazer1.webp'); img.style.objectFit='contain'; img.style.transform=''; }
+    }
+  });
+
   /* Tahoe → tahoe1.webp */
   document.querySelectorAll('img[src*="chevrolet-tahoe"], img[src*="tahoe1.webp"]').forEach(function(img){
     img.src = img.src.replace('chevrolet-tahoe.jpg','tahoe2.webp').replace('tahoe1.webp','tahoe2.webp');
