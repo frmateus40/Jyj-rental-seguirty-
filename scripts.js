@@ -107,6 +107,12 @@ function _applyDOMChanges(){
     }
   });
 
+  /* quita tarjeta BYD Seal */
+  document.querySelectorAll('.vehicle-card').forEach(function(card){
+    var h = card.querySelector('h3');
+    if(h && h.textContent.trim()==='BYD Seal') card.remove();
+  });
+
   /* quita tarjeta Pajero */
   document.querySelectorAll('.vehicle-card').forEach(function(card){
     var h = card.querySelector('h3');
