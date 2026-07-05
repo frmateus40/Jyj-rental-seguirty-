@@ -90,6 +90,13 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* Tahoe → tahoe1.webp */
+  document.querySelectorAll('img[src*="chevrolet-tahoe"]').forEach(function(img){
+    img.src = img.src.replace('chevrolet-tahoe.jpg','tahoe1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
   /* Traverse → traverse1.webp */
   document.querySelectorAll('img[src*="chevrolet-traverse"]').forEach(function(img){
     img.src = img.src.replace('chevrolet-traverse.jpg','traverse1.webp');
