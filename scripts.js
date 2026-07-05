@@ -90,6 +90,13 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* GLE → gle1.webp */
+  document.querySelectorAll('img[src*="mercedes-gle"]').forEach(function(img){
+    img.src = img.src.replace('mercedes-gle.jpg','gle1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
   /* GLS → Maybach GLS + gls1.webp */
   document.querySelectorAll('.vehicle-card').forEach(function(card){
     var h = card.querySelector('h3');
