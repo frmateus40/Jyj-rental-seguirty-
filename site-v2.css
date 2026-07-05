@@ -827,7 +827,7 @@ ul { list-style: none; }
   font-size: 1.05rem;
   font-weight: 800;
   color: #000000;
-  margin-bottom: 18px;
+  margin-bottom: 0.5cm;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -842,10 +842,10 @@ ul { list-style: none; }
 .footer-social-col .social-links {
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 0.5cm;
 }
 
-.footer-contact { display: flex; flex-direction: column; gap: 16px; }
+.footer-contact { display: flex; flex-direction: column; gap: 0.5cm; }
 .footer-contact li {
   display: flex;
   align-items: flex-start;
@@ -863,13 +863,14 @@ ul { list-style: none; }
 }
 .footer-phone:hover { color: #e53935; }
 
-.footer-nav { display: flex; flex-direction: column; gap: 10px; }
+.footer-nav { display: flex; flex-direction: column; gap: 0.5cm; }
 .footer-nav a {
   font-size: 0.88rem;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-align: left;
   transition: var(--transition);
 }
 .footer-nav a:hover { color: #e53935; padding-left: 6px; }
