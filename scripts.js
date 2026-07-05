@@ -90,6 +90,16 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* BYD Han → BYD YUAN Híbrida */
+  document.querySelectorAll('.vehicle-card').forEach(function(card){
+    var h = card.querySelector('h3');
+    if(h && h.textContent.trim()==='BYD Han'){
+      h.textContent = 'BYD YUAN Híbrida';
+      var img = card.querySelector('.vehicle-img img');
+      if(img){ img.src = img.src.replace('byd-han.webp','yuan1.webp'); img.style.objectFit='contain'; img.style.transform=''; }
+    }
+  });
+
   /* quita tarjeta Pajero */
   document.querySelectorAll('.vehicle-card').forEach(function(card){
     var h = card.querySelector('h3');
