@@ -83,6 +83,13 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* 7f-0. actualiza imagen Montero (mitsubishi-montero.webp → montero1.webp) */
+  document.querySelectorAll('img[src*="mitsubishi-montero"]').forEach(function(img){
+    img.src = img.src.replace('mitsubishi-montero.webp','montero1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
   /* 7f. actualiza imagen Segovia (toyota-segovia.webp → segovia1.webp) */
   document.querySelectorAll('img[src*="toyota-segovia"]').forEach(function(img){
     img.src = img.src.replace('toyota-segovia.webp','segovia1.webp');
