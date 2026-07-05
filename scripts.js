@@ -189,6 +189,23 @@ function _applyDOMChanges(){
     el.style.marginTop  = '0';
   });
 
+  /* footer: espaciado 0.5cm entre ítems y textos alineados */
+  var fc = document.querySelector('.footer-contact');
+  if(fc) fc.style.gap = '0.5cm';
+  var fn = document.querySelector('.footer-nav');
+  if(fn) fn.style.gap = '0.5cm';
+  document.querySelectorAll('.footer-nav a').forEach(function(a){ a.style.textAlign='left'; });
+  var fsl = document.querySelector('.footer-social-col .social-links');
+  if(fsl) fsl.style.gap = '0.5cm';
+  document.querySelectorAll('.footer-col h4').forEach(function(h){ h.style.marginBottom='0.5cm'; });
+
+  /* Instagram link */
+  document.querySelectorAll('a[aria-label="Instagram"]').forEach(function(a){
+    a.href = 'https://www.instagram.com/jyjrentalsecurity/';
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+
   /* 8. lightbox – clic en foto del vehículo muestra imagen grande */
   var lb = document.createElement('div');
   lb.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;';
