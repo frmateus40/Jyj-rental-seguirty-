@@ -90,6 +90,13 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* Traverse → traverse1.webp */
+  document.querySelectorAll('img[src*="chevrolet-traverse"]').forEach(function(img){
+    img.src = img.src.replace('chevrolet-traverse.jpg','traverse1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
   /* BYD Tang → tang1.webp */
   document.querySelectorAll('img[src*="byd-tang"]').forEach(function(img){
     img.src = img.src.replace('byd-tang.webp','tang1.webp');
