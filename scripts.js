@@ -90,6 +90,16 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* GLS → Maybach GLS + gls1.webp */
+  document.querySelectorAll('.vehicle-card').forEach(function(card){
+    var h = card.querySelector('h3');
+    if(h && h.textContent.trim()==='GLS'){
+      h.textContent = 'Maybach GLS';
+      var img = card.querySelector('.vehicle-img img');
+      if(img){ img.src = img.src.replace('mercedes-gls.jpg','gls1.webp'); img.style.objectFit='contain'; img.style.transform=''; }
+    }
+  });
+
   /* Suburban → Blazer RS + blazer1.webp */
   document.querySelectorAll('.vehicle-card').forEach(function(card){
     var h = card.querySelector('h3');
