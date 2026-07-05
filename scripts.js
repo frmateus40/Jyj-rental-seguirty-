@@ -83,6 +83,13 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* actualiza imagen Outlander (mitsubishi-outlander.webp → outlander1.webp) */
+  document.querySelectorAll('img[src*="mitsubishi-outlander"]').forEach(function(img){
+    img.src = img.src.replace('mitsubishi-outlander.webp','outlander1.webp');
+    img.style.objectFit = 'contain';
+    img.style.transform = '';
+  });
+
   /* 7f-0. actualiza imagen Montero (mitsubishi-montero.webp → montero1.webp) */
   document.querySelectorAll('img[src*="mitsubishi-montero"]').forEach(function(img){
     img.src = img.src.replace('mitsubishi-montero.webp','montero1.webp');
