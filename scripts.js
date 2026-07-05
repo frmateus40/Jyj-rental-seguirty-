@@ -90,6 +90,16 @@ function _applyDOMChanges(){
     img.style.transform = '';
   });
 
+  /* Clase S → AMG + amg1.webp */
+  document.querySelectorAll('.vehicle-card').forEach(function(card){
+    var h = card.querySelector('h3');
+    if(h && h.textContent.trim()==='Clase S'){
+      h.textContent = 'AMG';
+      var img = card.querySelector('.vehicle-img img');
+      if(img){ img.src = img.src.replace('mercedes-clase-s.jpg','amg1.webp'); img.style.objectFit='contain'; img.style.transform=''; }
+    }
+  });
+
   /* GLE → gle1.webp */
   document.querySelectorAll('img[src*="mercedes-gle"]').forEach(function(img){
     img.src = img.src.replace('mercedes-gle.jpg','gle1.webp');
