@@ -851,7 +851,7 @@ ul { list-style: none; }
   gap: 0.5cm;
 }
 
-.footer-contact { display: flex; flex-direction: column; gap: 0.5cm; }
+.footer-contact { display: flex; flex-direction: column; gap: 6px; }
 .footer-contact li {
   display: flex;
   align-items: flex-start;
@@ -910,12 +910,12 @@ ul { list-style: none; }
 .social-links a {
   width: 42px;
   height: 42px;
-  background: #eeeeee;
+  background: #e53935;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: #ffffff;
   transition: var(--transition);
   font-size: 1rem;
 }

@@ -241,9 +241,15 @@ function _applyDOMChanges(){
   var fsc = document.querySelector('.footer-social-col');
   if(fsc) fsc.style.marginTop = '-0.8cm';
 
-  /* footer: espaciado 0.5cm entre ítems y textos alineados */
+  /* footer: ítems de contacto pegados */
   var fc = document.querySelector('.footer-contact');
-  if(fc) fc.style.gap = '0.5cm';
+  if(fc) fc.style.gap = '6px';
+
+  /* iconos redes sociales: fondo rojo */
+  document.querySelectorAll('.social-links a').forEach(function(a){
+    a.style.background = '#e53935';
+    a.style.color = '#ffffff';
+  });
   var fn = document.querySelector('.footer-nav');
   if(fn) fn.style.gap = '0.5cm';
   /* footer nav: alineado a la izquierda, orden normal */
