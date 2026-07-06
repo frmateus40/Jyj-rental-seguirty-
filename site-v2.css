@@ -1136,6 +1136,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   .services-image img { height: 220px; }
 
   .carousel-img { height: 420px; }
+  .hero-carousel { margin-top: 2cm; }
 }
 
 /* ============================================================
@@ -1205,7 +1206,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   }
 
   /* ---- CARRUSEL ---- */
-  .hero-carousel { overflow: hidden; margin-top: 0; }
+  .hero-carousel { overflow: hidden; margin-top: 2cm; }
 
   .carousel-slide {
     min-height: 280px;

@@ -189,6 +189,12 @@ function _applyDOMChanges(){
     el.style.marginTop  = '0';
   });
 
+  /* carrusel: bajar 2cm en móvil y tablet */
+  if(window.innerWidth <= 900){
+    var hc = document.querySelector('.hero-carousel');
+    if(hc) hc.style.marginTop = '2cm';
+  }
+
   /* footer: espaciado 0.5cm entre ítems y textos alineados */
   var fc = document.querySelector('.footer-contact');
   if(fc) fc.style.gap = '0.5cm';
