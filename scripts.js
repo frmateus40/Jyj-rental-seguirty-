@@ -247,6 +247,7 @@ function _applyDOMChanges(){
   var fn = document.querySelector('.footer-nav');
   if(fn) fn.style.gap = '0.5cm';
   document.querySelectorAll('.footer-nav a').forEach(function(a){ a.style.textAlign='left'; });
+  if(fn) fn.style.gap = '4px';
   var fsl = document.querySelector('.footer-social-col .social-links');
   if(fsl) fsl.style.gap = '0.5cm';
   document.querySelectorAll('.footer-col h4').forEach(function(h){ h.style.marginBottom='0.5cm'; });

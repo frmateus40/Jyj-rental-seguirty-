@@ -869,7 +869,7 @@ ul { list-style: none; }
 }
 .footer-phone:hover { color: #e53935; }
 
-.footer-nav { display: flex; flex-direction: column; gap: 0.5cm; }
+.footer-nav { display: flex; flex-direction: column; gap: 4px; }
 .footer-nav a {
   font-size: 0.88rem;
   font-weight: 700;
