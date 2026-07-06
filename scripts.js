@@ -237,9 +237,9 @@ function _applyDOMChanges(){
     }
   });
 
-  /* redes sociales: subir más pegado a PQRS */
+  /* redes sociales: bajar 2cm para dar espacio respecto a la dirección */
   var fsc = document.querySelector('.footer-social-col');
-  if(fsc) fsc.style.marginTop = '-0.8cm';
+  if(fsc) fsc.style.marginTop = '2cm';
 
   /* footer: ítems de contacto pegados */
   var fc = document.querySelector('.footer-contact');

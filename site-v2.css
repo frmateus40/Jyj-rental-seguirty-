@@ -843,6 +843,7 @@ ul { list-style: none; }
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  margin-top: 2cm;
 }
 
 .footer-social-col .social-links {
