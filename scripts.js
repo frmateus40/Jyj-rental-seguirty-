@@ -195,6 +195,21 @@ function _applyDOMChanges(){
     if(hc) hc.style.marginTop = '2cm';
   }
 
+  /* botón ENVIAR: fondo rojo, letras blancas */
+  document.querySelectorAll('.btn-primary').forEach(function(b){
+    b.style.background  = '#e53935';
+    b.style.color       = '#ffffff';
+    b.style.borderColor = '#e53935';
+    b.addEventListener('mouseenter', function(){ this.style.background='#c62828'; this.style.borderColor='#c62828'; });
+    b.addEventListener('mouseleave', function(){ this.style.background='#e53935'; this.style.borderColor='#e53935'; });
+  });
+
+  /* flechas carrusel: rojo solo al pasar el mouse */
+  document.querySelectorAll('.carousel-btn').forEach(function(btn){
+    btn.addEventListener('mouseenter', function(){ this.style.background='#e53935'; this.style.color='#ffffff'; });
+    btn.addEventListener('mouseleave', function(){ this.style.background='rgba(255,255,255,0.15)'; this.style.color='#ffffff'; });
+  });
+
   /* sección cotización: fondo blanco, formulario gris */
   var cfs = document.querySelector('.contact-form-section');
   if(cfs) cfs.style.background = '#ffffff';
