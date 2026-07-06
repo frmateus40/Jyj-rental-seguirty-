@@ -246,25 +246,9 @@ function _applyDOMChanges(){
   if(fc) fc.style.gap = '0.5cm';
   var fn = document.querySelector('.footer-nav');
   if(fn) fn.style.gap = '0.5cm';
-  /* footer nav: INICIO en posición media, alineado igual que los demás */
-  (function(){
-    var nav = document.querySelector('.footer-nav');
-    if(!nav) return;
-    var items = Array.from(nav.querySelectorAll('li'));
-    var inicioLi = items.find(function(li){ return li.querySelector('a') && li.querySelector('a').textContent.trim()==='INICIO'; });
-    if(inicioLi){
-      nav.removeChild(inicioLi);
-      inicioLi.style.textAlign = '';
-      var a = inicioLi.querySelector('a');
-      if(a){ a.style.display=''; a.style.textAlign='left'; }
-      items = Array.from(nav.querySelectorAll('li'));
-      var mid = Math.floor(items.length / 2);
-      nav.insertBefore(inicioLi, items[mid] || null);
-    }
-    nav.style.gap = '4px';
-  })();
-  document.querySelectorAll('.footer-nav a').forEach(function(a){ a.style.textAlign='left'; });
+  /* footer nav: alineado a la izquierda, orden normal */
   if(fn) fn.style.gap = '4px';
+  document.querySelectorAll('.footer-nav a').forEach(function(a){ a.style.textAlign='left'; });
 
   /* móvil: formulario más pequeño para que no se salga del gris */
   if(window.innerWidth <= 768){
