@@ -219,6 +219,28 @@ function _applyDOMChanges(){
     f.style.borderRadius  = '10px';
   });
 
+  /* footer teléfonos: uno debajo del otro, ícono centrado */
+  document.querySelectorAll('.footer-contact li').forEach(function(li){
+    var icon = li.querySelector('i.fa-phone');
+    if(!icon) return;
+    li.style.alignItems = 'center';
+    var links = li.querySelectorAll('a.footer-phone');
+    if(links.length >= 2){
+      var div = li.querySelector('div');
+      if(!div){
+        div = document.createElement('div');
+        links.forEach(function(a){ div.appendChild(a.cloneNode(true)); div.appendChild(document.createElement('br')); });
+        li.innerHTML = '';
+        li.appendChild(icon.cloneNode(true));
+        li.appendChild(div);
+      }
+    }
+  });
+
+  /* redes sociales: subir más pegado a PQRS */
+  var fsc = document.querySelector('.footer-social-col');
+  if(fsc) fsc.style.marginTop = '-0.8cm';
+
   /* footer: espaciado 0.5cm entre ítems y textos alineados */
   var fc = document.querySelector('.footer-contact');
   if(fc) fc.style.gap = '0.5cm';
