@@ -26,13 +26,19 @@
   --transition: 0.3s ease;
 }
 
-html { scroll-behavior: smooth; font-size: var(--font-size-base); }
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size-base);
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font-main);
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -1133,7 +1139,7 @@ textarea:focus { outline: none; border-color: #e53935; }
 }
 
 /* ============================================================
-   RESPONSIVE — TABLET (< 900px)
+   RESPONSIVE — TABLET (≤ 900px)
    ============================================================ */
 @media (max-width: 900px) {
   .armored-info-inner,
@@ -1144,6 +1150,13 @@ textarea:focus { outline: none; border-color: #e53935; }
 
   .carousel-img { height: 420px; }
   .hero-carousel { margin-top: 2cm; }
+
+  /* Vehículos: 2 columnas en tablet */
+  .vehicles-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+  /* Secciones más compactas */
+  :root { --section-padding: 60px 0; }
+  .section-title { font-size: 1.7rem; }
 }
 
 /* ============================================================
@@ -1158,20 +1171,21 @@ textarea:focus { outline: none; border-color: #e53935; }
   .header-inner {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
     margin-left: 0;
-    padding: 0 16px 0.5cm;
+    padding: 10px 16px;
   }
 
-  .logo-img { height: clamp(26px, 8vw, 46px); width: auto; }
+  .logo-img { width: clamp(110px, 38vw, 180px); height: auto; }
 
-  /* Muestra hamburguesa — mismo tamaño que el logo */
+  /* Muestra hamburguesa */
   .nav-toggle {
     display: flex;
-    width: clamp(26px, 8vw, 46px);
-    height: clamp(26px, 8vw, 46px);
-    font-size: clamp(0.9rem, 3vw, 1.4rem);
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    flex-shrink: 0;
   }
 
   /* Menú oculto por defecto */
@@ -1213,7 +1227,7 @@ textarea:focus { outline: none; border-color: #e53935; }
   }
 
   /* ---- CARRUSEL ---- */
-  .hero-carousel { overflow: hidden; margin-top: 2cm; }
+  .hero-carousel { overflow: hidden; margin-top: 1.5cm; }
 
   .carousel-slide {
     min-height: 280px;
@@ -1301,16 +1315,18 @@ textarea:focus { outline: none; border-color: #e53935; }
   .client-logo   { width: 90px; }
 
   /* ---- FOOTER ---- */
-  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
   .footer-top { padding: 36px 0 28px; }
-  .footer-col h4 { font-size: 1rem; margin-bottom: 14px; }
-  .footer-social-col { align-items: flex-start; }
+  .footer-col h4 { font-size: 1rem; margin-bottom: 10px; }
+  .footer-social-col { align-items: flex-start; margin-top: 0 !important; }
   .footer-bottom-inner {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .footer-legal { align-items: center; }
+  .footer-contact { gap: 8px; }
+  .footer-nav { gap: 6px; }
 
   /* ---- PESTAÑAS MARCAS ---- */
   .brand-tab-btn { font-size: 0.75rem; padding: 10px 12px; }
@@ -1704,26 +1720,30 @@ textarea:focus { outline: none; border-color: #e53935; }
 }
 
 /* ============================================================
-   MÓVIL: formulario y header
+   MÓVIL: formulario compacto
    ============================================================ */
 @media (max-width: 768px) {
-  /* Formulario: padding reducido para que no se salga del gris */
-  .contact-form {
-    padding: 20px 16px;
-    border-radius: 8px;
-  }
+  .contact-form { padding: 20px 16px; border-radius: 8px; }
   .form-group input,
-  .form-group select {
-    padding: 9px 10px;
-    font-size: 0.85rem;
-  }
+  .form-group select { padding: 9px 10px; font-size: 0.85rem; }
   .form-group label { font-size: 0.82rem; }
+  .contact-form-section h2 { font-size: 1.5rem; }
+}
 
-  /* Header: más ancho en móvil */
-  .header-inner {
-    padding: 8px 20px 8px 20px;
-    margin-left: 0;
-  }
-  .logo-img { width: clamp(120px, 42vw, 200px); }
+/* ============================================================
+   PANTALLAS MUY PEQUEÑAS (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .container { padding: 0 14px; }
+  :root { --section-padding: 36px 0; }
+  .section-title { font-size: 1.35rem; }
+  .section-subtitle { font-size: 0.88rem; margin-bottom: 24px; }
+  .vehicles-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 16px 12px; }
+  .footer-grid { gap: 20px; }
+  .page-banner h1 { font-size: 1.4rem; }
+  .page-banner p { font-size: 0.9rem; }
+  .armored-text-only h2 { font-size: 1.3rem; }
+  .hero-carousel { margin-top: 1cm; }
 }
 

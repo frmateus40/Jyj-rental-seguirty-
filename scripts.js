@@ -189,10 +189,13 @@ function _applyDOMChanges(){
     el.style.marginTop  = '0';
   });
 
-  /* carrusel: bajar 2cm en móvil y tablet */
-  if(window.innerWidth <= 900){
-    var hc = document.querySelector('.hero-carousel');
-    if(hc) hc.style.marginTop = '2cm';
+  /* carrusel: margen top según tamaño de pantalla */
+  var hc = document.querySelector('.hero-carousel');
+  if(hc){
+    if(window.innerWidth <= 480)      hc.style.marginTop = '1cm';
+    else if(window.innerWidth <= 768) hc.style.marginTop = '1.5cm';
+    else if(window.innerWidth <= 900) hc.style.marginTop = '2cm';
+    else                               hc.style.marginTop = '0';
   }
 
   /* botón ENVIAR: fondo rojo, letras blancas */
@@ -237,9 +240,9 @@ function _applyDOMChanges(){
     }
   });
 
-  /* redes sociales: separación moderada respecto a la dirección */
+  /* redes sociales: separación solo en desktop */
   var fsc = document.querySelector('.footer-social-col');
-  if(fsc) fsc.style.marginTop = '0.5cm';
+  if(fsc) fsc.style.marginTop = window.innerWidth <= 768 ? '0' : '0.5cm';
 
   /* footer: ítems de contacto pegados */
   var fc = document.querySelector('.footer-contact');
