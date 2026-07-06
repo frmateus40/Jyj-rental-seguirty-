@@ -237,9 +237,9 @@ function _applyDOMChanges(){
     }
   });
 
-  /* redes sociales: bajar 2cm para dar espacio respecto a la dirección */
+  /* redes sociales: separación moderada respecto a la dirección */
   var fsc = document.querySelector('.footer-social-col');
-  if(fsc) fsc.style.marginTop = '2cm';
+  if(fsc) fsc.style.marginTop = '0.5cm';
 
   /* footer: ítems de contacto pegados */
   var fc = document.querySelector('.footer-contact');
