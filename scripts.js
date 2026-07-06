@@ -246,7 +246,26 @@ function _applyDOMChanges(){
   if(fc) fc.style.gap = '0.5cm';
   var fn = document.querySelector('.footer-nav');
   if(fn) fn.style.gap = '0.5cm';
-  document.querySelectorAll('.footer-nav a').forEach(function(a){ a.style.textAlign='left'; });
+  /* footer nav: INICIO centrado en el medio */
+  (function(){
+    var nav = document.querySelector('.footer-nav');
+    if(!nav) return;
+    var items = Array.from(nav.querySelectorAll('li'));
+    var inicioLi = items.find(function(li){ return li.querySelector('a') && li.querySelector('a').textContent.trim()==='INICIO'; });
+    if(inicioLi){
+      nav.removeChild(inicioLi);
+      items = Array.from(nav.querySelectorAll('li'));
+      var mid = Math.floor(items.length / 2);
+      nav.insertBefore(inicioLi, items[mid] || null);
+      inicioLi.style.textAlign = 'center';
+      var a = inicioLi.querySelector('a');
+      if(a){ a.style.display='block'; a.style.textAlign='center'; }
+    }
+    nav.style.gap = '4px';
+  })();
+  document.querySelectorAll('.footer-nav a').forEach(function(a){
+    if(a.textContent.trim()!=='INICIO') a.style.textAlign='left';
+  });
   if(fn) fn.style.gap = '4px';
   var fsl = document.querySelector('.footer-social-col .social-links');
   if(fsl) fsl.style.gap = '0.5cm';
