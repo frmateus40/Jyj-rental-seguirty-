@@ -195,6 +195,15 @@ function _applyDOMChanges(){
     if(hc) hc.style.marginTop = '2cm';
   }
 
+  /* sección cotización: fondo blanco, formulario gris */
+  var cfs = document.querySelector('.contact-form-section');
+  if(cfs) cfs.style.background = '#ffffff';
+  document.querySelectorAll('.contact-form').forEach(function(f){
+    f.style.background    = '#e0e0e0';
+    f.style.padding       = '32px';
+    f.style.borderRadius  = '10px';
+  });
+
   /* footer: espaciado 0.5cm entre ítems y textos alineados */
   var fc = document.querySelector('.footer-contact');
   if(fc) fc.style.gap = '0.5cm';

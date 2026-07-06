@@ -346,8 +346,13 @@ ul { list-style: none; }
    FORMULARIO DE CONTACTO
    ============================================================ */
 .contact-form-section {
-  background: var(--color-accent);
+  background: #ffffff;
   padding: var(--section-padding);
+}
+.contact-form {
+  background: var(--color-accent);
+  padding: 32px;
+  border-radius: 10px;
 }
 .contact-form-section h2 {
   font-size: 2rem;
