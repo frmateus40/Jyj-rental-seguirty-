@@ -1701,3 +1701,27 @@ textarea:focus { outline: none; border-color: #e53935; }
   }
   .service-photo-box { min-height: 260px; }
 }
+
+/* ============================================================
+   MÓVIL: formulario y header
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Formulario: padding reducido para que no se salga del gris */
+  .contact-form {
+    padding: 20px 16px;
+    border-radius: 8px;
+  }
+  .form-group input,
+  .form-group select {
+    padding: 9px 10px;
+    font-size: 0.85rem;
+  }
+  .form-group label { font-size: 0.82rem; }
+
+  /* Header: más ancho en móvil */
+  .header-inner {
+    padding: 8px 20px 8px 20px;
+    margin-left: 0;
+  }
+  .logo-img { width: clamp(120px, 42vw, 200px); }
+}

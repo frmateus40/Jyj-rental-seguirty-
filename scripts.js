@@ -246,7 +246,7 @@ function _applyDOMChanges(){
   if(fc) fc.style.gap = '0.5cm';
   var fn = document.querySelector('.footer-nav');
   if(fn) fn.style.gap = '0.5cm';
-  /* footer nav: INICIO centrado en el medio */
+  /* footer nav: INICIO en posición media, alineado igual que los demás */
   (function(){
     var nav = document.querySelector('.footer-nav');
     if(!nav) return;
@@ -254,19 +254,28 @@ function _applyDOMChanges(){
     var inicioLi = items.find(function(li){ return li.querySelector('a') && li.querySelector('a').textContent.trim()==='INICIO'; });
     if(inicioLi){
       nav.removeChild(inicioLi);
+      inicioLi.style.textAlign = '';
+      var a = inicioLi.querySelector('a');
+      if(a){ a.style.display=''; a.style.textAlign='left'; }
       items = Array.from(nav.querySelectorAll('li'));
       var mid = Math.floor(items.length / 2);
       nav.insertBefore(inicioLi, items[mid] || null);
-      inicioLi.style.textAlign = 'center';
-      var a = inicioLi.querySelector('a');
-      if(a){ a.style.display='block'; a.style.textAlign='center'; }
     }
     nav.style.gap = '4px';
   })();
-  document.querySelectorAll('.footer-nav a').forEach(function(a){
-    if(a.textContent.trim()!=='INICIO') a.style.textAlign='left';
-  });
+  document.querySelectorAll('.footer-nav a').forEach(function(a){ a.style.textAlign='left'; });
   if(fn) fn.style.gap = '4px';
+
+  /* móvil: formulario más pequeño para que no se salga del gris */
+  if(window.innerWidth <= 768){
+    document.querySelectorAll('.contact-form').forEach(function(f){
+      f.style.padding = '20px 16px';
+    });
+    document.querySelectorAll('.form-group input, .form-group select').forEach(function(el){
+      el.style.padding = '9px 10px';
+      el.style.fontSize = '0.85rem';
+    });
+  }
   var fsl = document.querySelector('.footer-social-col .social-links');
   if(fsl) fsl.style.gap = '0.5cm';
   document.querySelectorAll('.footer-col h4').forEach(function(h){ h.style.marginBottom='0.5cm'; });
